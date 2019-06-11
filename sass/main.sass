@@ -1,0 +1,54 @@
+$reds: #ba0000
+$yellows: #ffcc00
+
+
+// Default options
+
+*, *::after, *::before
+	box-sizing: border-box
+
+body
+	font-family: 'Poppins', sans-serif
+	margin: 0
+	padding: 0
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+
+button
+	outline: none
+
+a
+	text-decoration: none
+	display: inline-block
+
+img
+	display: block
+
+.btn
+	padding: 18px 35px
+	text-transform: uppercase
+	font-size: 12px
+	border-radius: 30px
+	border: 1px solid $yellows
+	color: $reds
+	box-shadow: 0 2px 9px $yellows
+	background-color: $yellows
+	font-weight: 900
+	letter-spacing: 1.2px
+	transition: all 0.4s
+	cursor: pointer
+	&:hover
+		background-color: $reds
+		color: $yellows
+
+
+@import 'header'
+@import 'mains'
+@import 'services'
+@import 'video'
+@import 'features'
+@import 'recom'
+@import 'simple'
+@import 'company'
+@import 'footer'
